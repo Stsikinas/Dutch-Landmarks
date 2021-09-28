@@ -10,7 +10,7 @@ import SwiftUI
 // Use this framework to get access to coordinates for Map
 import CoreLocation
 
-struct Landmark: Codable, Hashable {
+struct Landmark: Codable, Hashable, Identifiable {
     
     // MARK: - Helper Struct
     struct Coordinates: Codable, Hashable {
