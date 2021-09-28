@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Rijksmuseum",
+        "category": "Museum",
+        "city": "Amsterdam",
+        "state": "Amsterdam",
+        "id": 1001,
+        "isFeatured": true,
+        "isFavorite": true,
+        "coordinates": {
+            "longitude": 4.885175884656941,
+            "latitude": 52.36070521902041
+        },
+        "description": "19th-century building housing Dutch Golden Age painting masterpieces & vast European art collection.",
+        "imageName": "rijksmuseum"
+    },
+    {
+        "name": "Van Gogh Museum",
+        "category": "Museum",
+        "city": "Amsterdam",
+        "state": "Amsterdam",
+        "id": 1002,
+        "isFeatured": false,
+        "isFavorite": false,
+        "coordinates": {
+            "longitude": 4.881137187490585,
+            "latitude": 52.35849312577811
+        },
+        "description": "Museum housing the world's largest collection of Van Gogh paintings, alongside drawings & letters.",
+        "imageName": "vangoghmuseum"
+    },
+    {
+        "name": "Spoorwegmuseum",
+        "category": "Museum",
+        "city": "Utrecht",
+        "state": "Utrecht",
+        "id": 1003,
+        "isFeatured": false,
+        "isFavorite": true,
+        "coordinates": {
+            "longitude": 5.131116554636685,
+            "latitude": 52.08869339159373
+        },
+        "description": "Interactive museum set in a restored 19th-century station, tracing the history of rail travel.",
+        "imageName": "spoorwegmuseum"
+    },
+    {
+        "name": "Castle De Haar",
+        "category": "Monument",
+        "city": "Utrecht",
+        "state": "Utrecht",
+        "id": 1004,
+        "isFeatured": true,
+        "isFavorite": true,
+        "coordinates": {
+            "longitude": 4.9866771678555235,
+            "latitude": 52.125057654781564
+        },
+        "description": "19th-century, medieval-style palace with landscaped gardens that host regular fairs & events.",
+        "imageName": "dehaar"
+    },
+    {
+        "name": "Keukenhof",
+        "category": "Park",
+        "city": "Lisse",
+        "state": "Lisse",
+        "id": 1005,
+        "isFeatured": false,
+        "isFavorite": false,
+        "coordinates": {
+            "longitude": 4.545677199265993,
+            "latitude": 52.27492421144891
+        },
+        "description": "Expansive, 19th-century park, open from March to May, showcasing multicolored Dutch spring flowers.",
+        "imageName": "keukenhof"
+    },
+    {
+        "name": "Efteling",
+        "category": "Fun",
+        "city": "Kaatsheuvel",
+        "state": "Kaatsheuvel",
+        "id": 1006,
+        "isFeatured": false,
+        "isFavorite": false,
+        "coordinates": {
+            "longitude": 5.049728711401148,
+            "latitude": 51.650853867036616
+        },
+        "description": "Amusement park with fairytale-themed rides, wooden roller coasters & water fountain & light show.",
+        "imageName": "efteling"
+    }
+]

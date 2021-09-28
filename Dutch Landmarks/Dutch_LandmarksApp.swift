@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// App Entry Point
 @main
 struct Dutch_LandmarksApp: App {
     var body: some Scene {
