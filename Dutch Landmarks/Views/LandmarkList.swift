@@ -13,7 +13,8 @@ struct LandmarkList: View {
             // List with data (landmarks)
             // Identifying is unneccessary because Model (Landmark) confronts to Identifiable protocol
             List(landmarks) { landmark in
-                NavigationLink(destination: LandmarkDetail()) {
+                // Links to the destination you define
+                NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
                     LandmarkRow(landmark: landmark)
                 }
             }

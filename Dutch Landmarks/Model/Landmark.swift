@@ -21,7 +21,8 @@ struct Landmark: Codable, Hashable, Identifiable {
     // MARK: - Public Variables
     var id: Int
     var name: String
-    var state: String
+    var city: String
+    var category: String
     var description: String
     var image: Image {
         Image(imageName)
