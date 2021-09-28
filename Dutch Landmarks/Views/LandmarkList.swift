@@ -9,10 +9,15 @@ import SwiftUI
 
 struct LandmarkList: View {
     var body: some View {
-        // List with data (landmarks)
-        // Identifying is unneccessary because Model (Landmark) confronts to Identifiable protocol
-        List(landmarks) { landmark in
-            LandmarkRow(landmark: landmark)
+        NavigationView {
+            // List with data (landmarks)
+            // Identifying is unneccessary because Model (Landmark) confronts to Identifiable protocol
+            List(landmarks) { landmark in
+                NavigationLink(destination: LandmarkDetail()) {
+                    LandmarkRow(landmark: landmark)
+                }
+            }
+            .navigationTitle("Dutch Landmark")
         }
     }
 }
