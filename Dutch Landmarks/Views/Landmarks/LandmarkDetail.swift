@@ -9,7 +9,14 @@ import SwiftUI
 
 struct LandmarkDetail: View {
     
+    @EnvironmentObject var modelData: ModelData
+    
     var landmark: Landmark
+    
+    // Get landmark ID from model data collection
+    var landmarkIndex: Int {
+        modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
+    }
     
     var body: some View {
         ScrollView {
@@ -25,8 +32,12 @@ struct LandmarkDetail: View {
             
             // V stands for Vertical
             VStack(alignment: .leading) {
-                Text(landmark.name)
-                    .font(.title)
+                HStack {
+                    Text(landmark.name)
+                        .font(.title)
+                    // The button updates the isFavorite property of the landmark stored in your model object.
+                    FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
+                }
                 // H stands for Horizontal
                 HStack {
                     Text(landmark.city)
@@ -51,7 +62,11 @@ struct LandmarkDetail: View {
 }
 
 struct LandmarkDetail_Previews: PreviewProvider {
+    
+    static var modelData = ModelData()
+    
     static var previews: some View {
-        LandmarkDetail(landmark: landmarks[3])
+        LandmarkDetail(landmark: ModelData().landmarks[0])
+            .environmentObject(modelData)
     }
 }

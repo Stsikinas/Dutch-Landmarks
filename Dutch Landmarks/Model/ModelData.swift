@@ -7,7 +7,11 @@
 
 import Foundation
 
-var landmarks: [Landmark] = load("landmarkData.json")
+// Observe changes on object and refresh corresponding views
+final class ModelData: ObservableObject {
+    // Publish any changes to its data
+    @Published var landmarks: [Landmark] = load("landmarkData.json")
+}
 
 // Function to load data from file in main bundle
 func load<T: Decodable>(_ filename: String) -> T {

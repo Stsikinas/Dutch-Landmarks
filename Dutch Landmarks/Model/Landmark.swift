@@ -24,6 +24,7 @@ struct Landmark: Codable, Hashable, Identifiable {
     var city: String
     var category: String
     var description: String
+    var isFavorite: Bool
     var image: Image {
         Image(imageName)
     }
