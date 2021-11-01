@@ -1,0 +1,38 @@
+[
+    {
+        "name":"Rijksmuseum",
+        "id":1001,
+        "price":10.5,
+        "discount":true
+    },
+    {
+        "name":"Van Gogh Museum",
+        "id":1002,
+        "price":9,
+        "discount":false
+    },
+    {
+        "name":"Spoorwegmuseum",
+        "id":1003,
+        "price":7.5,
+        "discount":true
+    },
+    {
+        "name":"Castle De Haar",
+        "id":1004,
+        "price":5,
+        "discount":true
+    },
+    {
+        "name":"Keukenhof",
+        "id":1005,
+        "price":8.5,
+        "discount":false
+    },
+    {
+        "name":"Efteling",
+        "id":1006,
+        "price":19,
+        "discount":true
+    }
+]
