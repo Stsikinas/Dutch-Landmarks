@@ -11,6 +11,8 @@ import Foundation
 final class ModelData: ObservableObject {
     // Publish any changes to its data
     @Published var landmarks: [Landmark] = load("landmarkData.json")
+    // Tickets won't be modified, therefore @Published is skipped
+    var tickets: [Ticket] = load("TicketData.json")
 }
 
 // Function to load data from file in main bundle
