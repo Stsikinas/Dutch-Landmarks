@@ -30,6 +30,8 @@
 		466E71BC27031CAB009D646B /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E71BB27031CAB009D646B /* LandmarkDetail.swift */; };
 		4675DC8D27302A0D0011BA1D /* TicketDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675DC8C27302A0D0011BA1D /* TicketDetail.swift */; };
 		46E7E943273286890024390F /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E7E942273286890024390F /* CategoryHome.swift */; };
+		46E7E945273290F50024390F /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E7E944273290F50024390F /* CategoryRow.swift */; };
+		46E7E9472732B18D0024390F /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E7E9462732B18D0024390F /* CategoryItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		466E71BB27031CAB009D646B /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		4675DC8C27302A0D0011BA1D /* TicketDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDetail.swift; sourceTree = "<group>"; };
 		46E7E942273286890024390F /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
+		46E7E944273290F50024390F /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		46E7E9462732B18D0024390F /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				46E7E942273286890024390F /* CategoryHome.swift */,
+				46E7E944273290F50024390F /* CategoryRow.swift */,
+				46E7E9462732B18D0024390F /* CategoryItem.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -263,6 +269,7 @@
 			files = (
 				461C26332701C69A00D053DA /* ContentView.swift in Sources */,
 				4675DC8D27302A0D0011BA1D /* TicketDetail.swift in Sources */,
+				46E7E945273290F50024390F /* CategoryRow.swift in Sources */,
 				46422A45270479E900DDE717 /* Badge.swift in Sources */,
 				4607D6712701D6CA00DDD1AF /* MapView.swift in Sources */,
 				461C26312701C69A00D053DA /* Dutch_LandmarksApp.swift in Sources */,
@@ -270,6 +277,7 @@
 				46422A392704519900DDE717 /* HexagonParameters.swift in Sources */,
 				46422A422704702000DDE717 /* RotatedBadgeSymbol.swift in Sources */,
 				46422A3F27046EEC00DDE717 /* BadgeSymbol.swift in Sources */,
+				46E7E9472732B18D0024390F /* CategoryItem.swift in Sources */,
 				466E71B927031A15009D646B /* LandmarkList.swift in Sources */,
 				466E71BC27031CAB009D646B /* LandmarkDetail.swift in Sources */,
 				46E7E943273286890024390F /* CategoryHome.swift in Sources */,
