@@ -42,7 +42,7 @@ struct LandmarkDetail: View {
                 HStack {
                     Text(landmark.city)
                     Spacer()
-                    Text(landmark.category)
+                    Text(landmark.category.rawValue)
                 }
                 // Attributes can be set to the entire stack
                 .font(.subheadline)

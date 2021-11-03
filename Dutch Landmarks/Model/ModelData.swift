@@ -13,6 +13,11 @@ final class ModelData: ObservableObject {
     @Published var landmarks: [Landmark] = load("landmarkData.json")
     // Tickets won't be modified, therefore @Published is skipped
     var tickets: [Ticket] = load("TicketData.json")
+    
+    // Group Landmarks based on category
+    var categories: [String: [Landmark]] {
+        Dictionary(grouping: landmarks, by: { $0.category.rawValue })
+    }
 }
 
 // Function to load data from file in main bundle

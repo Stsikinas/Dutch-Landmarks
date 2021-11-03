@@ -22,7 +22,6 @@ struct Landmark: Codable, Hashable, Identifiable {
     var id: Int
     var name: String
     var city: String
-    var category: String
     var description: String
     var isFavorite: Bool
     var image: Image {
@@ -33,6 +32,13 @@ struct Landmark: Codable, Hashable, Identifiable {
             latitude: coordinates.latitude,
             longitude: coordinates.longitude
         )
+    }
+    var category: Category
+    enum Category: String, CaseIterable, Codable {
+        case park = "Park"
+        case museum = "Museum"
+        case monument = "Monument"
+        case fun = "Fun"
     }
     
     // MARK: - Private Variables

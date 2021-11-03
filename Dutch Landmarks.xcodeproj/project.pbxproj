@@ -29,6 +29,7 @@
 		466E71B927031A15009D646B /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E71B827031A15009D646B /* LandmarkList.swift */; };
 		466E71BC27031CAB009D646B /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E71BB27031CAB009D646B /* LandmarkDetail.swift */; };
 		4675DC8D27302A0D0011BA1D /* TicketDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675DC8C27302A0D0011BA1D /* TicketDetail.swift */; };
+		46E7E943273286890024390F /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E7E942273286890024390F /* CategoryHome.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		466E71B827031A15009D646B /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		466E71BB27031CAB009D646B /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		4675DC8C27302A0D0011BA1D /* TicketDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDetail.swift; sourceTree = "<group>"; };
+		46E7E942273286890024390F /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				46422A4727047B2D00DDE717 /* Badges */,
+				46E7E9412732866C0024390F /* Categories */,
 				461C26322701C69A00D053DA /* ContentView.swift */,
 				461D27F727035A51007A6B2C /* Helpers */,
 				461D27F627035A2D007A6B2C /* Landmarks */,
@@ -177,6 +180,14 @@
 				464AA0AA271417930026E81B /* TicketData.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		46E7E9412732866C0024390F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				46E7E942273286890024390F /* CategoryHome.swift */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 				46422A3F27046EEC00DDE717 /* BadgeSymbol.swift in Sources */,
 				466E71B927031A15009D646B /* LandmarkList.swift in Sources */,
 				466E71BC27031CAB009D646B /* LandmarkDetail.swift in Sources */,
+				46E7E943273286890024390F /* CategoryHome.swift in Sources */,
 				463A50D0272FFDD900D0CC60 /* TicketView.swift in Sources */,
 				46422A3C2704544400DDE717 /* BadgeBackground.swift in Sources */,
 				463A50C7272FE75D00D0CC60 /* Ticket.swift in Sources */,

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LandmarkList: View {
-    
+    // Data that should be shared with many views in app
     @EnvironmentObject var modelData: ModelData
     // States are view-specific so defgined as private
     @State private var showFavoritesOnly = false
