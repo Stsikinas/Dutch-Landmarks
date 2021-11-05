@@ -13,6 +13,7 @@ final class ModelData: ObservableObject {
     @Published var landmarks: [Landmark] = load("landmarkData.json")
     // Tickets won't be modified, therefore @Published is skipped
     var tickets: [Ticket] = load("TicketData.json")
+    @Published var profile = Profile.default
     
     // Group Landmarks based on category
     var categories: [String: [Landmark]] {
