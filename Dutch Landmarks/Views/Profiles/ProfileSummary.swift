@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ProfileSummary: View {
+    @EnvironmentObject var modelData: ModelData
     
     var profile: Profile
     
@@ -38,6 +39,15 @@ struct ProfileSummary: View {
                         .padding(.bottom)
                     }
                 }
+                
+                Divider()
+                
+                VStack(alignment: .leading) {
+                    Text("Recent Visits")
+                        .font(.headline)
+                    
+                    TicketView(ticket: modelData.tickets[0])
+                }
             }
         }
     }
@@ -46,5 +56,6 @@ struct ProfileSummary: View {
 struct ProfileSummary_Previews: PreviewProvider {
     static var previews: some View {
         ProfileSummary(profile: Profile.default)
+            .environmentObject(ModelData())
     }
 }
