@@ -16,6 +16,16 @@ struct ProfileHost: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 25) {
             HStack {
+                if editMode?.wrappedValue == .active {
+                    if #available(iOS 15.0, *) {
+                        Button("Cancel", role: .cancel) {
+                            draftProfile = modelData.profile
+                            editMode?.animation().wrappedValue = .inactive
+                        }
+                    } else {
+                        // Fallback
+                    }
+                }
                 Spacer()
                 // Default button to edit values in view
                 EditButton()
@@ -25,6 +35,13 @@ struct ProfileHost: View {
                 ProfileSummary(profile: modelData.profile)
             } else {
                 ProfileEditor(profile: $draftProfile)
+                // Update new values to model data profile
+                    .onAppear {
+                        draftProfile = modelData.profile
+                    }
+                    .onDisappear {
+                        modelData.profile = draftProfile
+                    }
             }
             
         }
